@@ -44,7 +44,7 @@ const Hero = () => {
             </div>
 
             <div className="relative">
-              <img className='  object-cover rounded-3xl' style={{maxWidth:"768px"}} src="https://ncmaz-nextjs.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1440778303588-435521a205bc%3Fixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26ixlib%3Drb-1.2.1%26auto%3Dformat%26fit%3Dcrop%26w%3D1950%26q%3D80&w=1080&q=75" alt="" />
+              <img className='  object-cover rounded-3xl' style={{maxWidth:"768px"}} src="https://ncmaz-nextjs.vercel.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1440778303588-435521a205bc%3Fixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26ixlib%3Drb-1.2.1%26auto%3Dformat%26fit%3Dcrop%26w%3D1950%26q%3D80&w=1080&q=75" alt="img" />
             </div>
           </div>
 

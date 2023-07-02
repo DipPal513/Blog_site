@@ -111,17 +111,17 @@ const Authors = () => {
                             , bg: "https://ncmaz-nextjs.vercel.app/_next/image?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F459225%2Fpexels-photo-459225.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D2%26h%3D750%26w%3D1260&w=1920&q=75"
 
                         },
-                        ].map((el) => (
+                        ].map((el,index) => (
                             <SwiperSlide className="py-16">
-                               <div className="rounded-xl shadow-xl relative mr-4 pb-5">
-                               <img src={el.bg} alt="" style={{height:"200px",borderTopRightRadius:"0.75rem",borderTopLeftRadius:"0.75rem"}} className="w-full"/>
-                                <div className="arrow absolute"></div>
-                                <div className="auth text-center -mt-8 z-100 ">
-                                    <img src={el.photo} style={{width:"100px"}} alt="" className="rounded-full border-white mx-auto" />
-                                    <h3 className="">{el.name}</h3>
-                                    <p className="text-gray-300 text-xl">@Author Job</p>
+                                <div className="rounded-xl shadow-xl relative mr-4 pb-5" key={index}>
+                                    <img src={el.bg} alt="" style={{ height: "200px", borderTopRightRadius: "0.75rem", borderTopLeftRadius: "0.75rem" }} className="w-full" />
+                                    <div className="arrow absolute"></div>
+                                    <div className="auth text-center -mt-8 z-100 ">
+                                        <img src={el.photo} style={{ width: "100px" }} alt="" className="rounded-full border-white mx-auto" />
+                                        <h3 className="">{el.name}</h3>
+                                        <p className="text-gray-300 text-xl">@Author Job</p>
+                                    </div>
                                 </div>
-                               </div>
                             </SwiperSlide>
                         ))}
                     </Swiper>

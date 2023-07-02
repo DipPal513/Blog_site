@@ -3,7 +3,7 @@ import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import Authors from "../../../public/Authors";
-
+import { LuMusic4 } from 'react-icons/lu'
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -63,18 +63,17 @@ const AudioSection = () => {
                         {AudioData.map((el, index) => {
                             // Replace the numeric value with the updated value
                             return (
-                                <SwiperSlide className="py-16">
+                                <SwiperSlide className="py-16" key={index}>
                                     <div className="mr-5 relative">
                                         <img src={el.img} className="rounded-xl " alt="" />
-                                        <div className="datas absolute bottom-0 ">
-                                            <div className="logo"></div>
-                                            <div className="">
-                                                <p className="bg-blue-300 text-blue-700 rounded-2xl py-1 px-2 font-semibold text-xs">{el.niche}</p>
-                                                <h3 className="text-white font-bold text-xl">
-                                                    {el.title}
-                                                </h3>
-                                                <p><span className="font-semibold text-xs">{el.Author}</span> . <span className="text-xs">{el.date}</span></p>
-                                            </div>
+                                        <div className="logo text-white absolute top-1/2 left-1/2 text-2xl w-11 h-11  border flex justify-center items-center rounded-full"><LuMusic4 /></div>
+                                        <div className="datas absolute bottom-0 px-3 pb-3">
+                                            <p className="bg-blue-300 text-blue-700 rounded-2xl py-1 px-2 font-semibold text-xs w-1/2 mb-2">{el.niche}</p>
+                                            <h3 className="text-white font-bold text-xl">
+                                                {el.title}
+                                            </h3>
+                                            <p className="flex text-gray-200"><span className="font-semibold text-xs">{el.Author}</span> . <span className="text-xs text-gray-200">{el.date}</span></p>
+
                                         </div>
                                     </div>
                                 </SwiperSlide>

@@ -66,9 +66,9 @@ const TrendingTopics = () => {
                             let newClassName = className.replace(/\d+/, match => parseInt(match) - 200);
 
                             const color = newClassName.toString()
-                            console.log(typeof color,color)
+                            
                             return (
-                                <SwiperSlide className="py-16">
+                                <SwiperSlide className="py-16" key={index}>
 
                                     <div className="mr-5">
                                         <div className="relative">
